@@ -1,7 +1,6 @@
 class Markdone < Formula
   desc "Personal todo lists kept as Markdown files"
   homepage "https://github.com/sharpmist/markdone"
-  version "0.4.0"
   license "MIT"
 
   on_macos do
@@ -25,14 +24,14 @@ class Markdone < Formula
 
   def install
     bin.install "t"
-    (share/"markdone").install "shell/t.zsh"
+    pkgshare.install "shell/t.zsh"
   end
 
   def caveats
     <<~EOS
       Tab completion for t needs zsh and fzf. To turn it on, add to ~/.zshrc,
       after fzf's key bindings (source <(fzf --zsh)):
-        source #{opt_share}/markdone/t.zsh
+        source #{opt_pkgshare}/t.zsh
     EOS
   end
 
