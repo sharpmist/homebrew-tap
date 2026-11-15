@@ -5,20 +5,23 @@ class Markdone < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/sharpmist/markdone/releases/download/v0.4.0/t-0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "72ec64972b9a961c022fbdc3c3d1b3b24d6d3c5835c8e6a2af2190f19a961354"
+      url "https://github.com/sharpmist/markdone/releases/download/v0.4.1/t-0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "984f0671f380942bccfe03e0270afb18e4f899c0aa51a2f73333577931ab53b5"
     end
     on_intel do
-      url "https://github.com/sharpmist/markdone/releases/download/v0.4.0/t-0.4.0-x86_64-apple-darwin.tar.gz"
-      sha256 "77f8d2fe7cbfa4e93a536138c34d014412911968911f141c981269f0da5c0330"
+      url "https://github.com/sharpmist/markdone/releases/download/v0.4.1/t-0.4.1-x86_64-apple-darwin.tar.gz"
+      sha256 "408e3e82425f8dd700f70f9b3ca881189ffabb7a50a72cf52b097d45df9cc1e9"
     end
   end
 
   on_linux do
-    # From the next release on, add an on_arm block for t-<version>-aarch64-unknown-linux-musl.tar.gz.
+    on_arm do
+      url "https://github.com/sharpmist/markdone/releases/download/v0.4.1/t-0.4.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "0650c663613ac9fb7479b457bb64897ea0b2d6fc4dd12c6cd23a1bcfe3b67803"
+    end
     on_intel do
-      url "https://github.com/sharpmist/markdone/releases/download/v0.4.0/t-0.4.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9d4a2611f90c8b2b4f08673ec35a5c38481910e3f7ae613d5f8926c07e416e0f"
+      url "https://github.com/sharpmist/markdone/releases/download/v0.4.1/t-0.4.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "0cd21f317c41043753941f533d59059bfe26229f816ecdf0039366eaec9d3e1c"
     end
   end
 
